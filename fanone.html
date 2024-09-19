@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+<!--Kode untuk judul page website-->
+<!--        <title>Home-Aplications</title> -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="layouts">
+            <section class="topbar">
+<!--Kode untuk judul Aplikasi-->
+                <h3>CONTROL FAN ONE</h3>
+            </section>
+            <section class="fandalam">
+                <div class="fanonedalam">
+                    <img id="fanOneImage" src="assets/fan-of.png" class="item-image"/>
+                    <button class="item-submit" id="fanControl" onclick="setFanOne()">TURN ON</button>
+
+                    <div class="fan-speed-container">
+                        <div class="fan-option">
+                            <img src="assets/satu-of.png" class="speed-image" alt="Speed 1" id="SpeedSatu"/>
+                            <button class="speed-label" id="Speedsatu" onclick="speedSatu()">Speed 1</button>
+                        </div>
+                        <div class="fan-option">
+                            <img src="assets/dua-of.png" class="speed-image" alt="Speed 2" id="SpeedDua"/>
+                            <button class="speed-label" id="Speeddua" onclick="speedDua()">Speed 2</button>
+                        </div>
+                        <div class="fan-option">
+                            <img src="assets/tiga-of.png" class="speed-image" alt="Speed 3" id="SpeedTiga"/>
+                            <button class="speed-label" id="Speedtiga" onclick="speedTiga()">Speed 3</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- Kode di bawah ini untuk perubahan icon buttombar ketika di klik -->
+            <section class="buttombar">
+                <ul>
+                    <li>
+                        <a href="load.html"><i class="fa-solid fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="database.html"><i class="fa-solid fa-database"></i>
+                    </li>
+                    <li>
+                        <a href="garfik.html"><i class="fa-solid fa-diagram-project"></i>
+                    </li>
+                    <li>
+                        <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </section>
+            <section class = "panah">
+                <a href="fan.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </section>
+            <section class="next">
+                <a href="databasefanone.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </section>
+        </div>        
+        <script src="main.js"></script>
+    </body>
+</html>

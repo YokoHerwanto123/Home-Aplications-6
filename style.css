@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('assets/cursor.png'), auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.layouts {
+    width: 476px;
+    margin: 0 auto;
+    height: 100vh;
+    border: 1px solid grey;
+    position: relative;
+}
+
+.topbar {
+    background-color: blue;
+    padding: 16px;
+    text-align: center;
+
+}
+
+.topbar h3 {
+    color: white;
+    font-weight: 800;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 32px;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+.item-image {
+    width: 50%;
+}
+
+.led-submit, .fan-submit, .mesincuci-submit, .valve-submit {
+    background-color: blue;
+    padding: 4px 8px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item-submit {
+    background-color: blue;
+    padding: 4px 8px;
+    width: 80%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.page-title {
+    padding: 16px;
+}
+
+.page-title h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+/* lamp image setting */
+.leds {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 16px;
+    padding: 16px;
+    justify-items: center;
+}
+
+.led {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px #999;
+}
+
+.led-location-text {
+    font-weight: 700;
+}
+
+.led-image {
+    width: 100px;
+    object-fit: cover;
+}
+
+/* fan image setting */
+.fans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    padding: 16px;
+    justify-items: center;
+}
+
+.fan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px #999;
+}
+
+.fan-location-text {
+    font-weight: 700;
+}
+
+.fan-image {
+    width: 100px;
+    object-fit: cover;
+}
+
+/* mesin cuci image setting */
+.mscuci {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    justify-items: center;
+}
+
+.mesincuci {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px #999;
+}
+
+.mesincuci-location-text {
+    font-weight: 700;
+}
+
+.mesincuci-image {
+    width: 100px;
+    object-fit: cover;
+}
+
+/* valve image setting */
+.valves {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    justify-items: center;
+}
+
+.valve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px #999;
+}
+
+.valve-location-text {
+    font-weight: 700;
+}
+
+.valve-image {
+    width: 100px;
+    object-fit: cover;
+}
+
+/* buttom bar (icon bawah) setting */
+.buttombar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    width: 100%;
+}
+
+.buttombar ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+}
+
+.buttombar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.buttombar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    display: block;
+}
+
+/* foto profil setting */
+.fotos {
+    display: grid;
+    gap: 2px;
+    padding: 16px;
+    justify-items: center;
+}
+
+.fotoprofil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px #999;
+}
+
+.foto-location-text {
+    font-weight: 700;
+}
+
+.fotoprofil-image {
+    width: 100px;
+    object-fit: cover;
+}
+
+/* tanda panah (kembali) setting*/
+.panah a {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 11px; /* Atur sesuai kebutuhan */
+    left: 5%;
+    font-size: x-large;
+    display: block;
+}
+
+
+/* tanda next  setting*/
+.next a {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 11px; /* Atur sesuai kebutuhan */
+    left: 90%;
+    font-size: x-large;
+    display: block;
+}
+
+.kembali a {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 11px; /* Atur sesuai kebutuhan */
+    left: 5%;
+    font-size: x-large;
+    display: block;
+}
+
+/* Profil text setting*/
+.profil-name {
+    font-size: 17px; /* Atur ukuran teks nama */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 10px; /* Tambahkan jarak di atas nama */
+    color: black; /* Atur warna teks sesuai kebutuhan */
+}
+
+.profil-nim {
+    font-size: 17px; /* Atur ukuran teks nama */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 10px; /* Tambahkan jarak di atas nama */
+    color: black; /* Atur warna teks sesuai kebutuhan */
+}
+
+.profil-prodi {
+    font-size: 17px; /* Atur ukuran teks nama */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 10px; /* Tambahkan jarak di atas nama */
+    color: black; /* Atur warna teks sesuai kebutuhan */
+}
+
+.profil-univ {
+    font-size: 17px; /* Atur ukuran teks nama */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 10px; /* Tambahkan jarak di atas nama */
+    color: black; /* Atur warna teks sesuai kebutuhan */
+}
+
+.profil-judul {
+    font-size: 17px; /* Atur ukuran teks nama */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 10px; /* Tambahkan jarak di atas nama */
+    color: black; /* Atur warna teks sesuai kebutuhan */
+}
+
+/* mesin cuci image control dalam */
+.mesincucionedalam {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 32px;
+    gap: 16px;
+}
+
+.mconedalam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+/* fan image control dalam */
+.fandalam {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 32px;
+    gap: 16px;
+}
+
+/*.fandalam {
+    text-align: center;
+    margin-bottom: 20px;
+}*/
+
+.fanonedalam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+.fantwodalam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+/* Control Speed fan*/
+.fan-options {
+    display: flex;
+    justify-content: space-around; /* Membagi jarak antar gambar angka */
+    width: 100%; /* Sesuaikan lebar container angka */
+}
+
+.fan-option {
+    text-align: center;
+}
+
+.fan-speed-container {
+    display: flex;
+    justify-content: center; /* Memusatkan gambar */
+    gap: 10px; /* Jarak antar gambar angka */
+    margin-top: 20px;
+}
+
+.speed-image {
+    width: 50px;
+    height: auto;
+}
+
+.speed-label {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.speed-label {
+    background-color: blue;
+    padding: 4px 5px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
